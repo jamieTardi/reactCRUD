@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ReactCRUD.services;
 
 namespace ReactCRUD
 {
@@ -26,6 +27,13 @@ namespace ReactCRUD
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<UserService>();
+            services.AddCors(o => o.AddPolicy("ReactPolicy", builder => {
+                builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +43,8 @@ namespace ReactCRUD
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("ReactPolicy");
 
             app.UseHttpsRedirection();
 
