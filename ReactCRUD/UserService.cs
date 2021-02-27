@@ -37,6 +37,23 @@ namespace ReactCRUD.services
         {
             return users.Where(user => user.Id == id).FirstOrDefault();
         }
-
+        public User Create(User user)
+        {
+            user.Id = Count++;
+            users.Add(user);
+            return user;
+        }
+        public void Update(int id, User user)
+        {
+            User found = users.Where(n => n.Id == id).FirstOrDefault();
+            found.Name = user.Name;
+            found.Name = user.Email;
+            found.Document = user.Document;
+            found.Phone = user.Phone;
+        }
+        public void Delete(int id)
+        {
+            users.RemoveAll(n => n.Id == id);
+        }
     }
 }
