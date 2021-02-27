@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactCRUD", "ReactCRUD\ReactCRUD.csproj", "{7561BBBC-1AF9-4779-B175-DC50F78B4DD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7561BBBC-1AF9-4779-B175-DC50F78B4DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7561BBBC-1AF9-4779-B175-DC50F78B4DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7561BBBC-1AF9-4779-B175-DC50F78B4DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7561BBBC-1AF9-4779-B175-DC50F78B4DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CD31C9F-133F-4DC3-BAE9-9DC48114C217}
+	EndGlobalSection
+EndGlobal
